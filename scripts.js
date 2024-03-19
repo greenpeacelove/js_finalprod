@@ -48,6 +48,11 @@ function renderTasks() {
     taskList.appendChild(listItem);
   });
 }
-
+// Випадаючий список
+function getSelectedOption() {
+    const selectList = document.getElementById('selectList');
+    const selectedOption = selectList.options[selectList.selectedIndex].text;
+    document.getElementById('selectedOption').textContent = `Вибраний елемент: ${selectedOption}`;
+  }
 // Оновити список завдань при завантаженні сторінки
 window.onload = renderTasks;
