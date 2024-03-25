@@ -1,4 +1,4 @@
-// JavaScript код
+
 const taskInput = document.getElementById('taskInput');
 const taskList = document.getElementById('taskList');
 let tasks = [];
@@ -52,7 +52,7 @@ function renderTasks() {
 function getSelectedOption() {
     const selectList = document.getElementById('selectList');
     const selectedOption = selectList.options[selectList.selectedIndex].text;
-    document.getElementById('selectedOption').textContent = `Вибраний елемент: ${selectedOption}`;
+    document.getElementById('selectedOption').textContent = `Selected day: ${selectedOption}`;
   }
 // Оновити список завдань при завантаженні сторінки
 window.onload = renderTasks;
